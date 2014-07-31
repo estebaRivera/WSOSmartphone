@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AQuery/AQuery.iml" filepath="$PROJECT_DIR$/AQuery/AQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ECDF/ECDF.iml" filepath="$PROJECT_DIR$/ECDF/ECDF.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EstadioCDF.iml" filepath="$PROJECT_DIR$/EstadioCDF.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JWPAndroid/JWPAndroid.iml" filepath="$PROJECT_DIR$/JWPAndroid/JWPAndroid.iml" />
+    </modules>
+  </component>
+</project>
+

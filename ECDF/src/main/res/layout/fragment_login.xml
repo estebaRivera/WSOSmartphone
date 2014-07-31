@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash2"
+    tools:context="co.winsportsonline.wso.activities.LoginActivity$PlaceholderFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/container_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+
+            <ImageView
+                android:id="@+id/logo_login"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/logoiphone"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/login_subtitulo"
+                android:layout_marginTop="10dp"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="Ingresa para vivir la experiencia Win Sports Online"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_below="@id/logo_login"
+                android:textAlignment="gravity" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_button_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        >
+
+        <Button
+            android:id="@+id/login_button_facebook"
+            android:background="#3b5998"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login_button"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:layout_marginTop="26dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_text_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08">
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textColor="@android:color/white"
+            android:text="@string/login_text"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_button_user"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <co.winsportsonline.wso.custom.EditTextView
+            android:id="@+id/login_user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:hint="EMAIL"
+            android:textSize="15dp"
+            android:textColor="#B6B6B6"
+            android:gravity="center"
+            android:lines="1"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:paddingLeft="8dp"
+            android:background="#FFFFFF"
+            android:layout_width="200dp"
+            android:layout_height="48dp" />
+
+    </RelativeLayout>
+   <RelativeLayout
+       android:id="@+id/container_button_pass"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="0.1">
+
+       <co.winsportsonline.wso.custom.EditTextView
+           android:id="@+id/login_pass"
+           android:layout_centerHorizontal="true"
+           android:hint="CONTRASEÑA"
+           android:textSize="15dp"
+           android:textColor="#B6B6B6"
+           android:inputType="textPassword"
+           android:textAlignment="center"
+           android:gravity="center"
+           android:lines="1"
+           android:paddingLeft="8dp"
+           android:password="true"
+           android:layout_marginTop="15dp"
+           android:background="#FFFFFF"
+           android:layout_width="200dp"
+           android:layout_height="48dp" />
+
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_button_loggin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_marginBottom="25dp">
+        <Button
+            android:id="@+id/login_button"
+            android:background="#F6BA2B"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="@string/login_session"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#323031"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_weight="5"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!--LinearLayout
+            android:id="@+id/share_container_live"
+            android:orientation="horizontal"
+            android:layout_alignBottom="@+id/slider_live"
+            android:layout_width="match_parent"
+            android:layout_height="77dp">
+
+            <include
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/share_fragment_3" />
+
+        </LinearLayout-->
+
+        <HorizontalScrollView
+            android:id="@+id/slider_live"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:overScrollMode="never"
+            android:smoothScrollbar="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/container_slider"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/show_1"
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent"
+                    layout="@layout/show_live"/>
+
+                <include
+                    android:id="@+id/show_2"
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent"
+                    layout="@layout/show_live"/>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/proximo_container"
+        android:background="#DCDCDC"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/proximos_encuetros"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#99000000"
+            android:textSize="18sp"
+            android:text=" "
+            android:layout_marginTop="16dp" />
+
+        <HorizontalScrollView
+            android:background="#DCDCDC"
+            android:id="@+id/scroll"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:overScrollMode="never"
+            android:smoothScrollbar="false"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/container_next_shows"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
